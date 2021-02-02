@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Snake</title>
+    <link rel="stylesheet" href="web.css">
+    <script>require=()=>({}); module={}; module.exports=()=>({})</script>
+    <img id ="snakeup" src="snakeup.png" alt="character head" srcset="">
+    <img id ="snakeright" src="snakeright.png" alt="character head" srcset="">
+    <img id ="snakedown" src="snakedown.png" alt="character head" srcset="">
+    <img id ="snakeleft" src="snakeleft.png" alt="character head" srcset="">
+    <img id ="snakeeatup" src="snakeeatup.png" alt="character head" srcset="">
+    <img id ="snakeeatright" src="snakeeatright.png" alt="character head" srcset="">
+    <img id ="snakeeatdown" src="snakeeatdown.png" alt="character head" srcset="">
+    <img id ="snakeeatleft" src="snakeeatleft.png" alt="character head" srcset="">
+    <style>
+      img {display: none;}
+    </style>
+  </head>
+  <body>
+    <div id="cont">
+      <div id="gameheader">
+        <div id="gameheader_score">Score: </div>
+      </div>
+      <canvas id="canvas" width="600" height="600"></canvas>
+      <div id="gamemenu">
+        <div id="gamemenu_scoreboard">
+          <div id="gamemenu_scoreboard_score">Score: 0</div>
+          <div id="gamemenu_scoreboard_highscore">HighScore: 0</div>
+        </div>
+        <div id="gamemenu_buttons">
+          <div id="gamemenu_playbutton1">1</div>
+          <div id="gamemenu_playbutton2">2</div>
+          <div id="gamemenu_playbutton3">3</div>
+
+          <div id="gamemenu_settingsbutton">Settings</div>   
+        </div>
+        <div id='settingsmenu'>
+          <form action="PLAY.html">
+            GameSpeed:
+            <select name="speed" id="selectspeed">
+              <option value="100">fast</option>
+              <option value="200">slow</option>
+              <option value="500">testing</option>
+            </select>
+          </form>
+          <button id='settingsmenu_exitbutton'>Close</button>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <script src="base.js"></script>
+    <script src="snake.js"></script>
+    <script src="web.js"></script>
+  </body>
+</html>
